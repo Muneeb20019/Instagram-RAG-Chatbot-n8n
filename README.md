@@ -8,7 +8,6 @@ An enterprise-grade AI orchestration engine built for **Fitness GYM**. This syst
 
 ## 📸 System Architecture & Preview
 ![Chatbot Interaction](IG%20Message.png)
-*Real-time interaction: AI retrieving gym facts from Pinecone while maintaining the sales funnel.*
 
 ---
 
