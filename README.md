@@ -7,18 +7,18 @@ An enterprise-grade AI orchestration engine built for **MAK GYM** in Karachi. Th
 ---
 
 ## 📸 System Architecture & Preview
-![Chatbot Interaction](https://github.com/Muneeb20019/mak-gym-rag-crm-automation/blob/main/chat.png?raw=true)
+![Chatbot Interaction](IG%20Message.png)
 *Real-time interaction: AI retrieving gym facts from Pinecone while maintaining the sales funnel.*
 
 ---
 
 ## 🏆 The Competitive Edge: The Power of Open Integration
-The standout feature of this project is its **Direct-to-API** architecture. Most Instagram bots are "closed systems" (like ManyChat) that trap your data and limit your logic.
+The standout feature of this project is its **Direct-to-API** architecture. Most Instagram bots are "closed systems" (like ManyChat or Chatfuel) that trap your data and limit your logic.
 
 **Why this system is superior:**
 *   **🔗 Universal Integration:** Unlike standard bots, this solution can be integrated with **any third-party tool** (Payment gateways, ERPs, specialized APIs) without restriction.
 *   **🧠 Limitless Logic:** Standard builders cannot handle advanced math. This bot performs real-time **BMI calculations** and **Vector Database lookups**—logic impossible in closed-ecosystem bots.
-*   **💰 Extreme Cost Efficiency:** By cutting out middlemen, this system runs at a flat rate, regardless of how many thousands of leads you capture.
+*   **💰 Extreme Cost Efficiency:** By cutting out middlemen like ManyChat, this system runs at a flat rate, regardless of how many thousands of leads you capture.
 *   **🛡️ Data Sovereignty:** You own the "Brain" and the data. Your leads move directly from Instagram to your private Google Sheets/Pinecone database.
 
 ---
@@ -35,7 +35,7 @@ Using an **n8n-centric** stack provides a superior return on investment by remov
 | **Google Sheets** | API (Free) | $0 |
 | **Total** | | **~$20 / mo** |
 
-### **Option B: Closed SaaS Platforms (ManyChat/Chatfuel/etc)**
+### **Option B: Closed SaaS Platforms (ManyChat/Chatfuel)**
 | Service | Plan | Est. Cost |
 | :--- | :--- | :--- |
 | **ManyChat Pro Fee** | Base Fee + 2.5k Subs | $40 |
@@ -72,24 +72,15 @@ Using an **n8n-centric** stack provides a superior return on investment by remov
 
 ## ⚙️ Workflow Logic
 
-### **1. The Response Pipeline**
+### **Main Conversation Engine**
 Incoming Webhooks are processed through an **AI Agent** equipped with a **Simple Memory** node. This allows the bot to handle "Distracted Conversations"—answering a question about parking in the middle of a signup process without forgetting the user's name.
 
-### **2. Semantic Vector Search**
-By utilizing **768-dimension semantic embeddings**, the bot performs a "Similarity Search" in Pinecone. It understands the *intent* behind questions like "Can I come on Friday?" and provides specific timing details.
+![Main Workflow](IG%20chatbot.png)
 
-### **3. Safe CRM Writing**
-To handle the "Plus Sign" formatting issue in Google Sheets, the system implements **single-quote prefix logic** via n8n expressions, ensuring all WhatsApp data is stored as clean text rather than broken formulas.
+### **Knowledge Base Indexing (RAG Pipeline)**
+By utilizing **768-dimension semantic embeddings**, the bot performs a "Similarity Search" in Pinecone. A background workflow watches Google Drive and automatically re-indexes the data.
 
----
-
-## 🏗️ Visualizing the Workflows
-
-### **Main Conversation Engine**
-![Main Workflow](https://github.com/Muneeb20019/mak-gym-rag-crm-automation/blob/main/workflow.png?raw=true)
-
-### **Knowledge Base Indexing**
-![Database Sync](https://github.com/Muneeb20019/mak-gym-rag-crm-automation/blob/main/database.png?raw=true)
+![Database Sync](IG%20Databse.png)
 
 ---
 
