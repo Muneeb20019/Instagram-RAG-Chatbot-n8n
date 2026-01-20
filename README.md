@@ -2,7 +2,7 @@
 
 ![Workflow](https://img.shields.io/badge/Workflow-n8n-EF5B25) ![Database](https://img.shields.io/badge/Vector%20DB-Pinecone-000000) ![AI](https://img.shields.io/badge/AI-Google%20Gemini-4285F4) ![CRM](https://img.shields.io/badge/CRM-Google%20Sheets-34A853)
 
-An enterprise-grade AI orchestration engine built for **MAK GYM** in Karachi. This system transforms Instagram into a high-conversion sales channel by combining **Retrieval-Augmented Generation (RAG)** with automated CRM workflows—built natively on **n8n** to eliminate the need for expensive third-party middlemen.
+An enterprise-grade AI orchestration engine built for **Fitness GYM**. This system transforms Instagram into a high-conversion sales channel by combining **Retrieval-Augmented Generation (RAG)** with automated CRM workflows—built natively on **n8n** to eliminate the need for expensive third-party middlemen.
 
 ---
 
@@ -40,10 +40,10 @@ Using an **n8n-centric** stack provides a superior return on investment by remov
 | :--- | :--- | :--- |
 | **ManyChat Pro Fee** | Base Fee + 2.5k Subs | $40 |
 | **AI Add-on Fee** | Extra Credits for GPT | $20 |
-| **Integration Premium**| Fees for External API Sync| $25 |
-| **Total** | | **~$85+ / mo** |
+| **Integration Premium**| Fees for External API Sync| $40 |
+| **Total** | | **~$100+ / mo** |
 
-**💡 Financial Impact:** This custom solution saves the business **~$780+ per year** while providing unlimited scalability and infinitely more complex logic.
+**💡 Financial Impact:** This custom solution saves the business **~$1200+ per year** while providing unlimited scalability and infinitely more complex logic.
 
 ---
 
